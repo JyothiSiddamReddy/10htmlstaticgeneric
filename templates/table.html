@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tables</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/c1.css' %}"> 
+</head>
+<body>
+	<center><h1>Table</h1></center>
+    <table border="1" style="border-collapse: collapse;">
+    	<tr>
+    		<th rowspan="8">WORK OUT WITH DAVID</th>
+    		<TH colspan="2">SCHEDULE</TH>
+    	</tr>
+    	<tr>
+    		<td rowspan="2">January 8</td>
+    		<td>Step Aerobics</td>
+    	</tr>
+    	<tr>
+    		<td>Pilates</td>
+    	</tr>
+    	<tr>
+    		<td rowspan="2">January 15</td>
+    		<td>Spinning</td>
+    	</tr>
+    	<tr>
+    		<td>Yoga</td>
+    	</tr>
+    	<tr>
+    		<td rowspan="2">January 22</td>
+    		<td>Kickboxing</td>
+    	</tr>
+    	<tr>
+    	    <td>Free Weights</td>
+    	</tr>
+    	<tr>
+    		<td colspan="2">Space is limited please sign up as soon as possible</td>
+    	</tr>
+    </table>
+</body>
+</html>

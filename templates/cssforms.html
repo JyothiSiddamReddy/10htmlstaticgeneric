@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css forms</title>
+	<style>
+
+		body
+		{
+         margin: 100px auto;
+         width:300px;
+         background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_OWcb9esUYLXKySf_ZHI7PFyAHiKZnhMDeA&usqp=CAU);
+         background-size: cover;
+         background-attachment: fixed;
+         background-repeat: no-repeat;
+   		}
+        #reg-form
+        {
+          background: linear-gradient(45deg,blue,green,purple);
+          padding: 20px;
+          border: 2px solid black;
+          text-align: center;
+        }
+        #reg-form .fgroup>input[type='text'],#reg-form .fgroup>input[type='password']
+        {
+        	width: 250px;
+        	margin-bottom: 10px;
+        	border: none;
+        	outline: none;
+        	background: transparent;
+        	color: cyan;
+        	font-size: 15px;
+        	border-bottom: 2px solid white;
+        	padding-bottom: 10px;
+
+        }
+        #reg-form .fgroup>textarea
+        {
+        	width: 250px;
+        	padding-bottom: 10px;
+        	border: none;
+        	outline: none;
+        
+        }
+        #reg-form .fgroup>input[type='submit'],#reg-form .fgroup>select
+        {
+        	width: 255px;
+        	padding-bottom: 5px;
+        	outline: none;
+        	border: none;
+        }
+        ::placeholder
+        {
+        	color: white;
+        }
+        #reg-form>.icon
+        {
+        	position: relative;
+        	top: -50px;
+        }
+        #reg-form>.icon>i
+        {
+        	font-size: 70px;
+        	color: white;
+        	background-color: blue;
+        	border-radius: 100%;
+        	border: 2px solid black;
+        	box-shadow: 0 0 10px black;
+        }
+	</style>
+</head>
+<body>
+     <div id="reg-form">
+
+     	<div class="fgroup"><input type="text" name="" placeholder="Enter Username"></input></div>
+     	<div class="fgroup"><input type="text" name="" placeholder="Enter Email"></input></div>
+     	<div class="fgroup"><input type="password" name="" placeholder="Enter password"></input></div>
+     	<div class="fgroup"><input type="password" name="" placeholder="Conform password"></input></div>
+     	<div class="fgroup"><textarea>Description</textarea></div>
+     	<div class="fgroup"><select>
+     		<option>select</option>
+     		<option>Manager</option>
+     		<option>Team Lead</option>
+     		<option>Employee</option>
+     	</select></div>
+     	<div class="fgroup"><input type="submit" name="" placeholder="Register Here"></input></div>
+     </div>
+</body>
+</html>
